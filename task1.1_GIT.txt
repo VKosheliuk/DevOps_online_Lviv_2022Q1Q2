@@ -1,0 +1,2 @@
+a34e358 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: commit: push
+2697fce HEAD@{1}: clone: from git@github.com:VKosheliuk/DevOps_online_Lviv_2022Q1Q2.git
