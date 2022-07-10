@@ -29,7 +29,10 @@
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_ping_1.png"></ul>
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_ping_dns.png"></ul>
 
+7. Призначити Сlient3 статичну адресу 192.168.0.(D+10).
 
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/95ea07a9e0f6890724f0babca14e7db32d855c98/m3/task3.1/scrin/7_client_3.png"></ul>
 
+8. Перевірити зв'язок з маршрутизатором за допомогою команди ping 192.168.0.1
 
-<img src=""></ul>
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/95ea07a9e0f6890724f0babca14e7db32d855c98/m3/task3.1/scrin/8_ping.png"></ul>
