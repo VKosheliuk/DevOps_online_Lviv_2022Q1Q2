@@ -21,7 +21,7 @@ m2/ task2.1/ task2.2/ …
 … 
 7. Clone repo to your workstation.
       <ul><i>git clone https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2.git</i></ul>
-      <ul><img src="task_1.1_foto_7.png"></ul>
+      <ul><img src="m1/task1.1/task_1.1_foto_7.png"></ul>
       <ul>dell@dell-VirtualBox:~$ git clone https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2.git</ul>
       <ul>Cloning into 'DevOps_online_Lviv_2022Q1Q2'...</ul>
       <ul>remote: Enumerating objects: 45, done.</ul>
