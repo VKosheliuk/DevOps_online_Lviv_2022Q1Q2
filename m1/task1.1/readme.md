@@ -48,8 +48,7 @@ m2/ task2.1/ task2.2/ …
  
 14. Create branch with name “images”. Checkout on it. Add images folder with some images inside it. Commit. 
       <ul>git checkout -b image</ul>
-      <ul><i><img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/317ae5d029afd1cd4c068f8caf80a6c74d7b0c82/download.jpeg"></i></ul>
-
+      
 15. Change your index.html. Add images source inside it. Commit. 
       <ul>nano index.html</ul>
       <ul>git add .</ul>
