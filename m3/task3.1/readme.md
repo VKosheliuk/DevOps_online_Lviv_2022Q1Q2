@@ -18,3 +18,18 @@
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/7d6fdfe03ec22b9e02316432eeff9861dc529bcf/m3/task3.1/scrin/2_ping_2.png"></ul>
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/7d6fdfe03ec22b9e02316432eeff9861dc529bcf/m3/task3.1/scrin/2_ping_dhcp.png"></ul>
 
+4. В мережі Data Center призначити статичні адреси, сформовані за таким правилом: M.D.Y.0/24, де М – номер місяця народження, D і Y аналогічно попередньому. Хостова частина Web Server 1 – 50, Web Server 2 – 100, DNS Server – 150.
+
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_dns_server.png"></ul>
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_web_server_1.png"></ul>
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_web_server_2.png"></ul>
+
+5. Перевірити зв'язок за допомогою команди ping
+
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_ping_1.png"></ul>
+<img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/4ba821ae017704093dc5ce77e2ab9c1f28e2103d/m3/task3.1/scrin/4_ping_dns.png"></ul>
+
+
+
+
+<img src=""></ul>
