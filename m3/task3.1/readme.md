@@ -1,4 +1,4 @@
-<ul>Task 3.1 - Створення мереж Home Office, Enterprise, Data Center</ul>
+<ul><center>Task 3.1 - Створення мереж Home Office, Enterprise, Data Center</center></ul>
 
 
 Створити мережі, як показано на рисунку. Рекомендовані моделі комутаторів Catalyst 2960, безпровідний маршрутизатор – WRT300N. В мережі Data Center підключити сервери до портів
