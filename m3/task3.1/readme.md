@@ -12,7 +12,7 @@
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/aa45a75fc5bfeefd44503fc51a07772feb36c511/m3/task3.1/scrin/2.2.png"></ul>
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/aa45a75fc5bfeefd44503fc51a07772feb36c511/m3/task3.1/scrin/2.3.png"></ul>
 
-Перевірити зв'язок за допомогою команди ping
+<center> Перевірити зв'язок за допомогою команди ping </center>
 
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/7d6fdfe03ec22b9e02316432eeff9861dc529bcf/m3/task3.1/scrin/2_ping_1.png"></ul>
 <img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/7d6fdfe03ec22b9e02316432eeff9861dc529bcf/m3/task3.1/scrin/2_ping_2.png"></ul>
