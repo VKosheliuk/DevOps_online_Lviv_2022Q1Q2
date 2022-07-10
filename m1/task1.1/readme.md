@@ -12,7 +12,7 @@
             <ul><i>user.email=viktor.koshelyuk@gmail.com</i></ul>
 4. Create account on GitHub.   		
 5. Create new private repo on GitHub. 
-      <ul><img src="task_1.1_foto_5.png"></ul>
+      <ul><img src="https://github.com/VKosheliuk/DevOps_online_Lviv_2022Q1Q2/blob/62593398e1d15d2fccdc77ddffcf5870f24a2d91/m1/task1.1/task_1.1_foto_5.png"></ul>
 6. You can see example repository structure. 
 / 
 m1/ task1.1/ 
