@@ -5,9 +5,9 @@
 
 2. Examine the pstree command. Make output (highlight) the chain (ancestors) of the current process.
 
-<ul><i>systemd─┬─ModemManager───2*[{ModemManager}]</i></ul>
-           <ul><i>├─NetworkManager───2*[{NetworkManager}]</i></ul>
-           <ul><i> ├─accounts-daemon───2*[{accounts-daemon}]</i></ul>
+<i>systemd─┬─ModemManager───2*[{ModemManager}]</i>
+    <ul><i>├─NetworkManager───2*[{NetworkManager}]</i></ul>
+   <ul><i> ├─accounts-daemon───2*[{accounts-daemon}]</i></ul>
           <ul><i> ├─acpid</i></ul>
          <ul><i> ├─avahi-daemon───avahi-daemon</i></ul>
           <ul><i> ├─colord───2*[{colord}]</i></ul>
