@@ -88,50 +88,50 @@
 
 10. What information does top command display?
 
-    <ul>The top (table of processes) command shows a real-time view of running processes in Linux and displays kernel-managed tasks.</ul>
+    The top (table of processes) command shows a real-time view of running processes in Linux and displays kernel-managed tasks.</ul>
 
-        <ul><i>top - 21:54:05 up 22 min,  1 user,  load average: 0,23, 0,36, 0,36</i></ul>
-        <ul><i>Tasks: 190 total,   1 running, 185 sleeping,   4 stopped,   0 zombie</i></ul>
-        <ul><i>%Cpu(s):  1,9 us,  4,1 sy,  0,0 ni, 94,1 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st</i></ul>
-        <ul><i>MiB Mem :   1978,0 total,    178,5 free,    713,2 used,   1086,2 buff/cache</i></ul>
-        <ul><i>MiB Swap:    448,5 total,    446,5 free,      2,0 used.   1089,4 avail Mem </i></ul>
+      top - 21:54:05 up 22 min,  1 user,  load average: 0,23, 0,36, 0,36
+      Tasks: 190 total,   1 running, 185 sleeping,   4 stopped,   0 zombie
+      %Cpu(s):  1,9 us,  4,1 sy,  0,0 ni, 94,1 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+      MiB Mem :   1978,0 total,    178,5 free,    713,2 used,   1086,2 buff/cache
+      MiB Swap:    448,5 total,    446,5 free,      2,0 used.   1089,4 avail Mem 
 
 11. Display the processes of the specific user using the top command.
 
-        <ul><i>top -u dell</i></ul>
+      top -u dell
 
 12. What interactive commands can be used to control the top command? Give a couple of examples.
 
-        <ul>us, user : time running un-niced user processes</ul>
-        <ul>sy, system : time running kernel processes</ul>
-        <ul>ni, nice : time running niced user processes</ul>
-        <ul>wa, IO-wait : time waiting for I/O completion</ul>
-        <ul>hi : time spent servicing hardware interrupts</ul>
-        <ul>si : time spent servicing software interrupts</ul>
-        <ul>st : time stolen from this vm by the hypervisor</ul>
+       us, user : time running un-niced user processes
+       sy, system : time running kernel processes
+       ni, nice : time running niced user processes
+        wa, IO-wait : time waiting for I/O completion
+        hi : time spent servicing hardware interrupts
+        si : time spent servicing software interrupts
+        st : time stolen from this vm by the hypervisor
 
 13. Sort the contents of the processes window using various parameters (for example, the amount of processor time taken up, etc.)
 
-        <ul><i>top -hv|-bcEeHiOSs1 -d secs -n max -u|U user -p pids -o field -w [cols]</i></ul>
+        top -hv|-bcEeHiOSs1 -d secs -n max -u|U user -p pids -o field -w [cols]
 
 14. Concept of priority, what commands are used to set priority?
 
-        <ul>You can change the process priority using nice and renice utility. Nice command will launch a process with an user defined scheduling priority. Renice command will modify the scheduling priority of a running process. Linux Kernel schedules the process and allocates CPU time accordingly for each of them</ul>
+       You can change the process priority using nice and renice utility. Nice command will launch a process with an user defined scheduling priority. Renice command will modify the scheduling priority of a running process. Linux Kernel schedules the process and allocates CPU time accordingly for each of them
 
 15. Can I change the priority of a process using the top command? If so, how?
 
-        <ul>Once given top command, press r. Give PID value of the process you want to change the process value. Give renice value (from -20 to +19)</ul>
-        <ul>Nice value of -20 means highest priority value and +19 means lowest priority value. 0 is by default value</ul>
+        Once given top command, press r. Give PID value of the process you want to change the process value. Give renice value (from -20 to +19)
+        Nice value of -20 means highest priority value and +19 means lowest priority value. 0 is by default value
 
 16. Examine the kill command. How to send with the kill command process control signal? Give an example of commonly used signals.
 
-        <ul>Signal Name : HUP, INT, TERM</ul>
+        Signal Name : HUP, INT, TERM
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
 
-        <ul>The jobs command will list all jobs on the system; active, stopped, or otherwise.</ul>
-        <ul>The fg command, short for the foreground, is a command that moves a background process on your current Linux shell to the foreground.</ul> 
-        <ul>This contrasts the bg command, short for background, that sends a process running in the foreground to the background in the current shell.</ul>
+       The jobs command will list all jobs on the system; active, stopped, or otherwise.
+       The fg command, short for the foreground, is a command that moves a background process on your current Linux shell to the foreground.
+       This contrasts the bg command, short for background, that sends a process running in the foreground to the background in the current shell.
 
 
 
