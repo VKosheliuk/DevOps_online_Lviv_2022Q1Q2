@@ -152,15 +152,15 @@ You can see the permissions of your file using the ls command with the -l option
 <ul><i>ls -l myfile.txt</i></ul>
 
 Permissions
-Every file and directory under UNIX or Linux has a set of permissions associated with it that is shown as a three digit number (such as 755). These permissions are categorized into three groups who have or do not have the permissions
-the file owner
-the owner’s group
-everyone else who has access to the server (referred to as “other”)
-These three groups, in turn, may or may not have three different privileges
-Privilege	Definition
-read (r)	reading, opening, viewing, and copying the file is allowed
-write (w)	writing, changing, deleting, and saving the file is allowed
-execute (x)	executing and invoking the file is allowed. This is required for directories to allow searching and access.
+<ul>Every file and directory under UNIX or Linux has a set of permissions associated with it that is shown as a three digit number (such as 755). These permissions are categorized into three groups who have or do not have the permissions</ul>
+<ul>the file owner</ul>
+<ul>the owner’s group</ul>
+<ul>everyone else who has access to the server (referred to as “other”)</ul>
+<ul>These three groups, in turn, may or may not have three different privileges</ul>
+<ul>Privilege	Definition</ul>
+<ul>read (r)	reading, opening, viewing, and copying the file is allowed</ul>
+<ul>write (w)	writing, changing, deleting, and saving the file is allowed</ul>
+<ul>execute (x)	executing and invoking the file is allowed. This is required for directories to allow searching and access.</ul>
 
 16) What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
 17) What is an example of octal representation of access rights? Describe the umask command.
