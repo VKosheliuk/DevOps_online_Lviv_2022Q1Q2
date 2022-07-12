@@ -95,9 +95,73 @@ Use the -r (--remove) option to force userdel to remove the user’s home direct
 <ul><i>passwd --expire user</i></ul>
 <ul><i>chage -l user</i></ul>
     
-13) Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
-14) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
-15) What is the sequence of defining the relationship between the file and the user?
+11. Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
+
+Ls SYNOPSIS ls [-AabCcdFfghikLlmnopqRrstux1] [-timeout seconds] [-streams] [-X attr] [pathname...]
+
+Permissions are indicated as follows:
+r	Read
+w	Write (edit)
+x	Execute (search)
+
+<ul><i>dell@dell:~$ ls -lh</i></ul>
+<ul><i>total 32K</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 12 09:59 Desktop</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 13:37 Documents</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 14:15 Downloads</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 13:37 Music</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 13:37 Pictures</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 13:37 Public</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 13:37 Templates</i></ul>
+<ul><i>drwxr-xr-x 2 dell dell 4,0K лип 11 13:37 Videos</i></ul>
+
+
+<ul><i>dell@dell:~$ ls -la</i></ul>
+<ul><i>total 76</i></ul>
+<ul><i>drwxr-xr-x 15 dell dell 4096 лип 11 22:23 .</i></ul>
+<ul><i>drwxr-xr-x  3 root root 4096 лип 11 13:25 ..</i></ul>
+<ul><i>-rw-------  1 dell dell  138 лип 11 22:23 .bash_history</i></ul>
+<ul><i>-rw-r--r--  1 dell dell  220 лип 11 13:25 .bash_logout</i></ul>
+<ul><i>-rw-r--r--  1 dell dell 3771 лип 11 13:25 .bashrc</i></ul>
+<ul><i>drwx------ 14 dell dell 4096 лип 11 14:14 .cache</i></ul>
+<ul><i>drwx------ 14 dell dell 4096 лип 11 21:53 .config</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 12 09:59 Desktop</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 13:37 Documents</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 14:15 Downloads</i></ul>
+<ul><i>drwx------  3 dell dell 4096 лип 11 13:34 .gnupg</i></ul>
+<ul><i>drwx------  3 dell dell 4096 лип 11 13:34 .local</i></ul>
+<ul><i>drwx------  4 dell dell 4096 лип 11 14:10 .mozilla</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 13:37 Music</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 13:37 Pictures</i></ul>
+<ul><i>-rw-r--r--  1 dell dell  807 лип 11 13:25 .profile</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 13:37 Public</i></ul>
+<ul><i>-rw-r--r--  1 dell dell    0 лип 11 21:51 .sudo_as_admin_successful</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 13:37 Templates</i></ul>
+<ul><i>drwxr-xr-x  2 dell dell 4096 лип 11 13:37 Videos</i></ul>
+
+12. What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
+
+The permissions that are granted to a user, or to an application, to read, write and erase files in the computer. Access rights can be tied to a particular client or server, to folders within that machine or to specific programs and data files
+The rights granted to a single user or group of users who operate a computer. Administrative privileges allow a user the right to make any and all changes in the computer, including setting up accounts for other users
+The rights granted to software running in the computer, which determines which hardware and software resources can be accessed and changed.
+
+13. What is the sequence of defining the relationship between the file and the user?
+
+You can see the permissions of your file using the ls command with the -l option (lowercase L not 1):
+
+<ul><i>ls -l myfile.txt</i></ul>
+
+Permissions
+Every file and directory under UNIX or Linux has a set of permissions associated with it that is shown as a three digit number (such as 755). These permissions are categorized into three groups who have or do not have the permissions
+the file owner
+the owner’s group
+everyone else who has access to the server (referred to as “other”)
+These three groups, in turn, may or may not have three different privileges
+Privilege	Definition
+read (r)	reading, opening, viewing, and copying the file is allowed
+write (w)	writing, changing, deleting, and saving the file is allowed
+execute (x)	executing and invoking the file is allowed. This is required for directories to allow searching and access.
+
 16) What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
 17) What is an example of octal representation of access rights? Describe the umask command.
 18) Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
