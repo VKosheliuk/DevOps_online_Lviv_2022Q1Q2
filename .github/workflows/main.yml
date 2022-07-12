@@ -1,9 +1,13 @@
+#---------------------------------------- 
 # This is a basic workflow to help you get started with Actions
-
-name: CI
+#----------------------------------------
+name: CI_CD
+env:
+ APPLICATION_NAME: "MyFlsk"
+ PACKAGE_NAME    : "DEPLOY-FLASK-${{ github.sha }}"
 
 # Controls when the workflow will run
-on:
+on: 
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
@@ -16,21 +20,59 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  my_testing:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    steps: 
+    - name: print Hello in testing
+      run: echo "Hello Viktor from testing job"
+    
+    - name: Execure few commands
+      run: |
+       echo "Hello Message1"
+       echo "Hello Message2"
+       echo "Aplication name: ${{ env.APPLICATION_NAME }}"
+    
+    - name: List folder
+      run: ls -la
+    
+    - name: Git clone
+      uses: actions/checkout@v1
+      
+    - name: List folder
+      run: ls -la
+         
+  my_deploy: 
+    runs-on: ubuntu-latest
+    needs: [my_testing]
+    env:
+     VAR1: "Level Variable1"
+     VAR2: "Level Variable2"
+     
+    steps: 
+    - name: print Hello in deploy
+      run: echo "Hello Viktor from deploy job"
+    - name: Deployment packet
+      run: echo " Printing is ${{ env.PACKAGE_NAME }}"
+    
+    - name: Lests test 1
+      run: aws --version
+      
+    - name: Lests test 2
+      run: zip --version
+    
+    - name: print env var
+      run: |
+       echo " Var1 = ${{ env.VAR1 }}"
+       echo " Var2 = ${{ env.VAR2 }}"
+       echo " var3 = $LOCAL_ENV"
+      env: 
+       LOCAL_ENV: "This is local enviroment"
+       
+      
+      
+    
+  
+ 
