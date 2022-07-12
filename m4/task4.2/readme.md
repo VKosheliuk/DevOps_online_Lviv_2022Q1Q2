@@ -8,17 +8,17 @@ Task assignment.
     <ul>dell@dell:~$ less /etc/group<u/l>
     <ul>dell@dell:~$ more /etc/group</ul>
 
-root:x:0:
-daemon:x:1:
-bin:x:2:
-sys:x:3:
-adm:x:4:syslog,dell
-tty:x:5:syslog
-disk:x:6:
-lp:x:7:
-mail:x:8:
-news:x:9:
-uucp:x:10:
+<ul><i>root:x:0:</i><u/l>
+<ul><i>daemon:x:1:</i><u/l>
+<ul><i>bin:x:2:</i><u/l>
+<ul><i>sys:x:3:</i><u/l>
+<ul><i>adm:x:4:syslog,dell</i><u/l>
+<ul><i>tty:x:5:syslog</i><u/l>
+<ul><i>disk:x:6:</i><u/l>
+<ul><i>lp:x:7:</i><u/l>
+<ul><i>mail:x:8:</i><u/l>
+<ul><i>news:x:9:</i><u/l>
+<ul><i>uucp:x:10:</i><u/l>
 
 dell@dell:~$ id -g
 1000
