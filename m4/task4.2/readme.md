@@ -66,7 +66,7 @@ GID 100+ allocated for the user’s group.
 6.How do I change the name (account name) of an existing user?
 
 You need to use the usermod command to change user name under a Linux operating systems. 
-<ul><i>sudo usermod -l newUsername oldUsername
+<ul><i>sudo usermod -l newUsername oldUsername</i></ul>
 
 7. What is skell_dir? What is its structure?
 
