@@ -157,14 +157,52 @@ Permissions
 <ul>the owner’s group</ul>
 <ul>everyone else who has access to the server (referred to as “other”)</ul>
 <ul>These three groups, in turn, may or may not have three different privileges</ul>
-<ul>Privilege	Definition</ul>
+Privilege	Definition
 <ul>read (r)	reading, opening, viewing, and copying the file is allowed</ul>
 <ul>write (w)	writing, changing, deleting, and saving the file is allowed</ul>
 <ul>execute (x)	executing and invoking the file is allowed. This is required for directories to allow searching and access.</ul>
 
-16) What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
-17) What is an example of octal representation of access rights? Describe the umask command.
-18) Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
+14. What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
+
+To change file and directory permissions, use the command chmod (change mode). The owner of a file can change the permissions for user ( u ), group ( g ), or others ( o ) by adding ( + ) or subtracting ( - ) the read, write, and execute permissions
+
+<ul><i>dell@dell:~$ ls -lah file.txt</i></ul>
+<ul><i>-rw-rw-r-- 1 dell dell 0 лип 12 10:29 file.txt</i></ul>
+
+<ul><i>dell@dell:~$ chmod 751 file.txt</i></ul>
+<ul><i>dell@dell:~$ ls -lah file.txt</i></ul>
+<ul><i>-rwxr-x--x 1 dell dell 0 лип 12 10:29 file.txt</i></ul>
+
+<ul><i>dell@dell:~$ chmod 777 file.txt</i></ul>
+<ul><i>dell@dell:~$ ls -lah file.txt</i></ul>
+<ul><i>-rwxrwxrwx 1 dell dell 0 лип 12 10:29 file.txt</i></ul>
+
+15. What is an example of octal representation of access rights? Describe the umask command.
+
+The chmod command is used to control the access permissions for directories. We can use the octal notation to set permissions. To describe the octal notation, we can add permission values to obtain new, combined (octal) values.
+Permission values:
+<ul>1 – able to execute (x)</ul>
+<ul>2 – able to write (w)</ul>
+<ul>4 – able to read (r)</ul>
+The octal number is the sum of the permission values, for example:
+<ul>3 (1+2) – able to execute and write</ul>
+<ul>6 (2+4) – able to write and read</ul>
+The meaning of the r, w, and x attributes is different:
+<ul>r - Allows the contents of the directory to be listed if the x attribute is also set.</ul>
+<ul>w - Allows files within the directory to be created, deleted, or renamed if the x attribute is also set.</ul>
+<ul>x - Allows a directory to be entered (i.e. cd dir).</ul>
+
+On Unix-like operating systems, the umask command returns, or sets, the value of the system's file mode creation mask.
+
+16. Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
+
+Setuid and setgid are a way for users to run an executable with the permissions of the user (setuid) or group (setgid) who owns the file.
+
+<ul><i>dell@dell:~$ mkdir catalog1</i></ul>
+<ul><i>dell@dell:~$ chmod 777 catalog1</i></ul>
+<ul><i>dell@dell:~$ ls -ld catalog1/</i></ul>
+<ul><i>drwxrwxrwx 2 dell dell 4096 лип 12 10:40 catalog1/</i></ul>
+
 19) What file attributes should be present in the command script?
     
     <ul><i></i></ul>
