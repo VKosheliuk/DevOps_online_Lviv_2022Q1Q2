@@ -203,6 +203,34 @@ Setuid and setgid are a way for users to run an executable with the permissions 
 <ul><i>dell@dell:~$ ls -ld catalog1/</i></ul>
 <ul><i>drwxrwxrwx 2 dell dell 4096 лип 12 10:40 catalog1/</i></ul>
 
-19) What file attributes should be present in the command script?
+17. What file attributes should be present in the command script?
+
+The files and directories can have the following attributes:
+a - append only
+c - compressed
+d - no dump
+e - extent format
+i - immutable
+j - data journaling
+s - secure deletion
+t - no tail-merging
+u - undeletable
+A - no atime updates
+D - synchronous directory updates
+S - synchronous updates
+T - top of directory hierarchy
+
+ <ul><i> <ul><i>dell@dell:~$ lsattr</i></ul>
+ <ul><i>--------------e----- ./Documents</i></ul>
+ <ul><i>--------------e----- ./Public</i></ul>
+ <ul><i>--------------e----- ./Templates</i></ul>
+ <ul><i>--------------e----- ./Pictures</i></ul>
+ <ul><i>--------------e----- ./Music</i></ul>
+ <ul><i>--------------e----- ./Videos</i></ul>
+ <ul><i>--------------e----- ./Desktop</i></ul>
+ <ul><i>--------------e----- ./Downloads</i></ul>
+ <ul><i>--------------e----- ./file.txt</i></ul>
+ <ul><i>--------------e----- ./catalog1</i></ul>
+
     
-    <ul><i></i></ul>
+
